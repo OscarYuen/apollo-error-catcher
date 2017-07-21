@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
-const catchGraphqlError = function(WrappedComponent) {
+const catchApolloError = function(WrappedComponent, ErrorComponent) {
     return class ApolloErrorHandler extends React.Component {
         static propTypes = {
             data: PropTypes.shape({
@@ -13,7 +13,7 @@ const catchGraphqlError = function(WrappedComponent) {
             if (this.props.data) {
                 const error = this.props.data.error;
                 if (error) {
-                    console.log(error);
+                    return <ErrorComponent {...this.props}/>;
                 } else {
                     return <WrappedComponent {...this.props}/>
                 }
@@ -22,4 +22,4 @@ const catchGraphqlError = function(WrappedComponent) {
     }
 }
 
-export default catchGraphqlError;
+export default catchApolloError;

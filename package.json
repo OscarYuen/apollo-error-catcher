@@ -1,6 +1,6 @@
 {
-  "name": "apollo-graphql-error",
-  "version": "1.0.1",
+  "name": "apollo-error-catcher",
+  "version": "1.0.2",
   "description": "Used as higher order component to catch apollo graphql error in a generic manner",
   "main": "lib/index.js",
   "files": [
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/OscarYuen/apollo-graphql-error.git"
+    "url": "https://github.com/OscarYuen/apollo-error-catcher.git"
   },
   "peerDependencies": {
     "react": "^15.6.1"
