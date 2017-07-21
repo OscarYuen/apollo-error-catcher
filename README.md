@@ -6,6 +6,12 @@ It is to wrap the react component which is using apollo-react to call graphql qu
 If there is any unhandled apollo error, it would catch the error and return a component which
 is readable for user instead of a red error page. 
 
+## Installation:
+You could install this package via following command
+```javascript
+npm install apollo-error-catcher
+```
+
 ## Example:
 
 We need to prepare our own Error Component for unhandled apollo error case.
