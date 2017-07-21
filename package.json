@@ -21,6 +21,10 @@
     "start": "webpack --watch",
     "build": "webpack"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OscarYuen/apollo-graphql-error.git"
+  },
   "peerDependencies": {
     "react": "^15.6.1"
   },
