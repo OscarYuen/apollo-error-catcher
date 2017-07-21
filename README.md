@@ -40,6 +40,7 @@ import {NotFound} from '../Error';
 class About extends React.Component {
 
     static propTypes = {
+        email: PropTypes.string,
         isTested: PropTypes.bool,
         testAction: PropTypes.func
     };
@@ -70,7 +71,7 @@ const getUser = graphql(getUserQuery, {
     options: (ownProps) => {
         return {
             variables: {
-                email: ownProps.cookies.get('email'),
+                email: ownProps.email,
             }
         }
     }
